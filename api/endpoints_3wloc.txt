@@ -1,0 +1,90 @@
+
+
+URL: https://threew-loc.onrender.com/
+
+
+1.Signup 
+
+- POST /api/signup/ – Inscription des utilisateurs.
+
+{
+	  "username" : "admin2",
+	  "password" : "#!@dm1n!#",
+	  "last_name" : "ADMIN",
+	  "first_name" : "",
+	  "email" : "admin2@gmail.com",
+	  "phone_number":"",
+	  "birthdate": "",
+	  "civility": "",
+	  "country_id": "a89969be-6880-4c9b-84a1-56a865214414",
+	  "city": "",
+	  "department": "",
+	  "zip_code": "",
+	  "main_address": "",
+	  "secondary_address": "",
+	  "type_compte": ""
+  
+}
+
+2. Login
+- POST /api/login/ – Connection des utilisateurs
+
+{
+    "email": "user@sparkinvest.com",
+    "password": "123456",
+}
+
+3. Reinitialisation password.
+
+- POST /api/password/reset – 
+{
+    "email": "user@sparkinvest.com",
+    "password": "123456",
+}
+
+4.Edit user
+
+- POST /api/users/update/{id}/ – Modification des utilisateurs.
+
+{
+	  "username" : "admin2",
+	  "password" : "#!@dm1n!#",
+	  "last_name" : "ADMIN",
+	  "first_name" : "Admin",
+	  "email" : "admin2@gmail.com",
+	  "phone_number":"",
+	  "birthdate":"2020-10-12",
+	  "civility": "",
+	  "country_id": "a89969be-6880-4c9b-84a1-56a865214414",
+	  "city": "cotonou",
+	  "department": "",
+	  "zip_code": "",
+	  "main_address": "",
+	  "secondary_address": "",
+	  "type_compte": ""
+  
+}
+
+5. Recuperer l'utilisateur
+
+- GET /api/users/{id} – Récuperer les informations d'un profil.
+
+
+6. Liste des utilisateurs
+
+- GET /api/users/ – Liste des utilisateurs.
+
+7. Rafraichir le token
+
+- GET /api/token/refresh/ Rafraichir le token de sécurité
+
+8. Liste des pays
+
+- GET /api/country/  – Liste des pays.
+
+9.Subcategory
+- POST /api/subcategory/ –
+{
+    "wording": "123456",
+}
+
